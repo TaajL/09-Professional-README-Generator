@@ -66,3 +66,10 @@ const questions = [
       message: "Enter your email address:",
     },
   ];
+
+  async function getUserInput () {
+    const answers = await inquirer.prompt(questions);
+    return generateReadme(answers);
+  }
+
+  async function writeFile
