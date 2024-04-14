@@ -2,10 +2,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { writeFile } = require('fs/promises');
-const generateReadme = require('./generateReadme');
-const util = require('util');
-const { assert } = require('console');
-const writeFileAsync = util.promisify(fs.writeFile);
+const generateReadme = require('./generateReadme/generateReadme.js');
+//const util = require('util');
+//const { assert } = require('console');
+//const writeFileAsync = util.promisify(fs.writeFile);
 //Questions Array 
 const questions = [
     {
@@ -89,3 +89,5 @@ const questions = [
             console.error(err)
         }
   }
+
+  run();
