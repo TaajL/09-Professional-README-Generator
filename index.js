@@ -72,4 +72,11 @@ const questions = [
     return generateReadme(answers);
   }
 
-  async function writeFile
+  async function writeToFile(readme) {
+    try{
+        await writeFileAsync("README.md" , readme);
+        console.log("Success!");
+    } catch(err){
+        console.log(err)
+    }
+  }
