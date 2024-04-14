@@ -4,6 +4,7 @@ const fs = require('fs');
 const { writeFile } = require('fs/promises');
 const generateReadme = require('./generateReadme');
 const util = require('util');
+const { assert } = require('console');
 const writeFileAsync = util.promisify(fs.writeFile);
 //Questions Array 
 const questions = [
@@ -79,3 +80,12 @@ const questions = [
     await writeFileAsync("README.md" , readme);
   }
 
+  const run = async () => {
+    try {
+        const answers = await getUserInput();
+        await generateAndWriteReadme(answers);
+        console.log('Success!');
+        } catch (err) {
+            console.error(err)
+        }
+  }
