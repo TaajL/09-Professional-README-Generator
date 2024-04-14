@@ -2,7 +2,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { writeFile } = require('fs/promises');
-const generateReadme = ('')
+const generateReadme = require('./generateReadme');
+const util = require('util');
 const writeFileAsync = util.promisify(fs.writeFile);
 //Questions Array 
 const questions = [
