@@ -1,9 +1,10 @@
+// Variables and Dependencies
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { writeFile } = require('fs/promises');
 const generateReadme = ('')
-const writeFile =
-
+const writeFileAsync = util.promisify(fs.writeFile);
+//Questions Array 
 const questions = [
     {
       type: "input",
@@ -80,3 +81,5 @@ const questions = [
         console.log(err)
     }
   }
+
+  getUserInput().then(writeToFile);
