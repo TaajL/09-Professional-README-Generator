@@ -71,16 +71,11 @@ const questions = [
 
   async function getUserInput () {
     const answers = await inquirer.prompt(questions);
-    return generateReadme(answers);
+    return answers;
   }
 
-  async function writeToFile(readme) {
-    try{
-        await writeFileAsync("README.md" , readme);
-        console.log("Success!");
-    } catch(err){
-        console.log(err)
-    }
+  const generateAndWriteReadme = async (answers) => {
+    const readme = generateReadme(answers);
+    await writeFileAsync("README.md" , readme);
   }
 
-  getUserInput().then(writeToFile);
