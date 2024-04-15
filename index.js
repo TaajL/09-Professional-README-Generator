@@ -1,11 +1,11 @@
 // Variables and Dependencies
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { writeFile } = require('fs/promises');
+const util = require('util');
+const writeFileAsync = util.promisify(fs.writeFile);
+//const { writeFile } = require('fs/promises');
 const generateReadme = require('./generateReadme/generateReadme.js');
-//const util = require('util');
 //const { assert } = require('console');
-//const writeFileAsync = util.promisify(fs.writeFile);
 //Questions Array 
 const questions = [
     {
@@ -79,6 +79,7 @@ const questions = [
     const readme = generateReadme(answers);
     await writeFileAsync("README.md" , readme);
   }
+
 
   const run = async () => {
     try {

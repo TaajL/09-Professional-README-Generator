@@ -1,4 +1,4 @@
-    const generateReadme = (answers) => {
+const generateReadme = (answers) => {
     const { title, description, installation, usage, contributing, tests, license, github, email } = answers;
   
     return `# ${title}
