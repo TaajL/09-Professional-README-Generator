@@ -1,8 +1,5 @@
-const generateReadme = (answers) => {
-    const { title, description, installation, usage, contributing, tests, license, github, email } = answers;
-  
-    return `# ${title}
-  ![License](https://img.shields.io/badge/License-${license}-blue.svg)
+# a
+  ![License](https://img.shields.io/badge/License-Apache_License_2.0-blue.svg)
 
   ## Table of Contents
   * [Description](https://github.com/TaajL/09-Professional-README-Generator/tree/main/generatedREADMEs#description)
@@ -14,24 +11,22 @@ const generateReadme = (answers) => {
   * [Questions?](https://github.com/TaajL/09-Professional-README-Generator/tree/main/generatedREADMEs#questions)
 
   ## Description
-    ${description}
+    a
   
   ## Installation
-    ${installation}
+    a
   
   ## Usage
-    ${usage}
+    a
   
   ## Contributing
-    ${contributing}
+    a
   
   ## Tests
-    ${tests}
+    a
   
   ## License
-    This project is licensed under the ${license} license.
+    This project is licensed under the Apache_License_2.0 license.
   
   ## Contact
-    If you have any questions, please contact me at ${github} or ${email}.`;
-  }
-  module.exports = generateReadme
+    If you have any questions, please contact me at a or a.
