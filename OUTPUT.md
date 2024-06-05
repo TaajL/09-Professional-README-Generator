@@ -1,4 +1,4 @@
-# 09 Professional ReadME Generator
+# 09 Professional ReadMe Generator
   ![License](https://img.shields.io/badge/License-MIT_License-blue.svg)
 
   ## Table of Contents
@@ -11,19 +11,19 @@
   * [Questions?](https://github.com/TaajL/09-Professional-README-Generator/blob/main/OUTPUT.md/#contact)
 
   ## Description
-    nodejs command line professional readme generator
+    Nodejs command line professional readme generator.
   
   ## Installation
-    npm install inquirer
+    npm install inquirer 
   
   ## Usage
-    invoke the application using the command: node index.js
+    invoke application using command: node index.js
   
   ## Contributing
-    fork the repo and then contribute code
+    Fork the repo, then contribute code. 
   
   ## Tests
-    run unit test with jest 
+    Run unit test with Jest.
   
   ## License
     This project is licensed under the MIT_License license.
